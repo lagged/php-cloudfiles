@@ -1930,6 +1930,16 @@ class CF_Object
     }
 
     /**
+     * Find out if an object exists.
+     *
+     * @return boolean
+     */
+    public function exists()
+    {
+        return $this->_initialize();
+    }
+
+    /**
      * Internal check to get the proper mimetype.
      *
      * This function would go over the available PHP methods to get
